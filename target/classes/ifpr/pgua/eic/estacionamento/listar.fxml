@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<HBox xmlns="http://javafx.com/javafx" 
+      xmlns:fx="http://javafx.com/fxml" 
+      prefHeight="400" prefWidth="600"
+      fx:controller="ifpr.pgua.eic.estacionamento.controllers.JanelaListar"
+      spacing="10.0"
+      >
+
+      <padding>
+          <Insets topRightBottomLeft="20.0"/>
+      </padding>
+
+      <ListView fx:id="ltvVeiculos" onMouseClicked="#mostrarDetalhes"/>
+      <VBox spacing="10.0">
+        <TextArea fx:id="taDetalhes" editable="false"/>
+        <Button text="Voltar" onAction="#voltar"/>
+      </VBox>
+      
+
+</HBox>
